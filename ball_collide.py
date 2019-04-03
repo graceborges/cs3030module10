@@ -39,14 +39,8 @@ def main():
     b1 = ()
     b2 = ()
 
-    #for testing purposes
-    b1 = (1,2,4,6)
-    b2 = (3,6,7,8)
-
-    b1 = tuple(b1)
-    b2 = tuple(b2)
-    #b1 = tuple(input('Please enter coordinates for ball 1 in format - x,y,z,r: ').split(','))
-    #b2 = tuple(input('Please enter coordinates for ball 2 in format - x,y,z,r: ').split(','))
+    b1 = tuple(input('Please enter coordinates for ball 1 in format - x,y,z,r: ').split(','))
+    b2 = tuple(input('Please enter coordinates for ball 2 in format - x,y,z,r: ').split(','))
     
     ball_collide(b1,b2)
 
