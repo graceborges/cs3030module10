@@ -11,17 +11,17 @@ def eval_winner(p1, p2):
 
         Returns:
             1 - if player 1 wins
-            2 - if player 2 wins
+            2 - if player 2 / CPU wins
             0 - if the game results in a tie
     
     """
-    #if player one chooses rock
+    #if player 1 chooses rock
     if p1 == "R" or p1 == "r":
         if p2 == "S":
-            print('\nP1 Wins: Rock smashes Scissors\n')
+            print('\nYou win: Rock smashes Scissors\n')
             return 1
         elif p2 == "P":
-            print('\nP2 Wins: Paper covers Rock\n')
+            print('\nCPU win: Paper covers Rock\n')
             return 2
         else:
             print('\nTie: Both chose Rock\n')
@@ -30,22 +30,22 @@ def eval_winner(p1, p2):
     #player 1 chooses paper
     elif p1 == "P" or p1 == "p":
         if p2 == "R":
-            print('\nP1 Wins: Paper covers Rock\n')
+            print('\nYou win: Paper covers Rock\n')
             return 1
         elif p2 == "S":
-            print('\nP2 Wins: Scissors cuts Paper\n')
+            print('\nCPU win: Scissors cuts Paper\n')
             return 2
         else:
             print('\nTie: Both chose Paper\n')
             return 0
 
-    #player 3 chooses scissors
+    #player 1 chooses scissors
     elif p1 == "S" or p1 == "s":
         if p2 == "P":
-            print('\nP1 Wins: Scissors cuts Paper\n')
+            print('\nYou win: Scissors cuts Paper\n')
             return 1
         elif p2 == "R":
-            print('\nP2 Wins: Rock smashes Scissors\n')
+            print('\nCPU win: Rock smashes Scissors\n')
             return 2
         else:
             print('\nTie: Both chose Scissors\n')
